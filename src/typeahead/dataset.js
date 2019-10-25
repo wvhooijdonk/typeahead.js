@@ -270,8 +270,8 @@ var Dataset = (function() {
         if (!canceled && rendered < that.limit) {
           that.cancel = $.noop;
           rendered = suggestions.length;
-					if (rendered > that.limit) {
-					  rendered = that.limit;
+	  if (rendered > that.limit) {
+	    rendered = that.limit;
           }
           that._append(query, suggestions.slice(0, rendered));
 
